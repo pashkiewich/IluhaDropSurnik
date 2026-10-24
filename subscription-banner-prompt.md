@@ -1,0 +1,1 @@
+Built-in Imagegen. User portrait reference redrawn as Ilyukha: preserve blond bob and facial proportions, dark winter coat and snowy pine forest, add clown makeup and mushroom hat. Landscape 3:2, winter blue/gold accents. Exact headline: куплю подписку, оптимизирую пайплайн.

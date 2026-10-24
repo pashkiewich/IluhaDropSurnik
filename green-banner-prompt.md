@@ -1,0 +1,1 @@
+Built-in Imagegen. Reference campaign composition with pale cloudy sky and apartment blocks; replace person with Ilyukha clown mascot, mushroom hat, cigar, emerald zelyonka stains across face, navy coat. Remove original names and year. Exact headline: Пора депать Илюха Дроп. Orange headline block and teal typography.

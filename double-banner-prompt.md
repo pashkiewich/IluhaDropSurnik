@@ -1,0 +1,2 @@
+Built-in Imagegen. Winter fantasy reference: left stone golem with raised fist, right horned orange centaur, snowy pink/lilac forest and Santa hats. Left face replaced with Ilyukha clown features. Landscape 3:2, exact headline: Встём даблу на Илюха Дроп.
+Final edit: left character human masculine Ilyukha face, dark wavy hair, clown makeup, red nose, red grin, mandatory red mushroom hat with white spots and lit brown cigar. Other character, text and layout unchanged.

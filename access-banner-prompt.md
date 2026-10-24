@@ -1,0 +1,2 @@
+Built-in Imagegen. Landscape 3:2 gold/red/black meme casino banner; mushroom-hatted Ilyukha clown with disconnected cable and VPN coin; exact headline: Проблемы с доступом к Илюха Дроп? No additional text.
+Final edit: keep headline, frame, colors and Ilyukha face; replace pose with reference toast, raised champagne coupe, knowing smile, tuxedo, mushroom hat. Remove coin and cable from hands.

@@ -1,0 +1,2 @@
+Built-in Imagegen. Landscape 3:2 gold/red/black meme casino banner; Ilyukha clown with lavish blond curls, mushroom hat tilted back, gesturing to hair, VPN coins; exact headline: Пересадка волос на Илюха Дроп. No additional text.
+Final edit: restrained hair clinic advertisement, white/pale-blue backdrop, navy sans-serif headline, thin teal accent, blond Ilyukha in white shirt, no hat, no casino decoration. Exact original headline preserved.

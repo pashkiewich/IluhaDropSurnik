@@ -1,0 +1,1 @@
+Built-in Imagegen. Landscape 3:2 gold/blue/black meme casino banner; mushroom-hatted Ilyukha clown holding blue Steam card; exact headline: Быстро пополняй Steam в Илюха Дроп. No additional text.

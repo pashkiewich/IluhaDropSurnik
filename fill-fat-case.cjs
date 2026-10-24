@@ -1,0 +1,11 @@
+const fs=require('node:fs');let p='dist/app.js',s=fs.readFileSync(p,'utf8');
+s='function itemVisual(item){return item.sprite?`<img class="item-sprite" src="${item.sprite}" alt="${item.name}">`:item.icon;}\n'+s;
+s=s.replace('<span>${it.icon}</span><h3>','<span class="inventory-art">${itemVisual(it)}</span><h3>');
+s=s.replace('Game.items.map((it,i)=>','Game.getItems(c).map((it,i)=>');
+s=s.replace('<span>${it.icon} ${it.name}</span>','<span class="odds-item">${itemVisual(it)} <span>${it.name}</span></span>');
+s=s.replace("Game.items.map(i=>`<span>${i.icon}</span>`)","Game.getItems(c).map(i=>`<span>${itemVisual(i)}</span>`)");
+s=s.replace('${item.icon}</div><h2>${item.name}', '${itemVisual(item)}</div><h2>${item.name}');
+fs.writeFileSync(p,s);
+p='dist/request-drop.js';s=fs.readFileSync(p,'utf8').replace('function result(random){return random<.5?{...Game.items.reduce((a,b)=>a.value>b.value?a:b)}:null;}','function result(random,c=Game.cases[0]){return random<.5?{...Game.rarest(c)}:null;}');
+s=s.replace('«У меня работает»','«${Game.rarest(c).name}»').replace('result(bytes[0]/4294967296)','result(bytes[0]/4294967296,c)').replace('${item.icon}</div><h2>${item.name}','${itemVisual(item)}</div><h2>${item.name}');fs.writeFileSync(p,s);
+p='check-request.cjs';s=fs.readFileSync(p,'utf8').replace('window:{},document:{}','itemVisual:it=>it.icon,window:{},document:{}').replace("'45,30,17,7,1'","'40,28,17,9,5,1'");fs.writeFileSync(p,s);

@@ -1,0 +1,5 @@
+const fs=require('node:fs');let p='dist/app.js',s=fs.readFileSync(p,'utf8');
+const marker='</div></section><section class="modes">';
+if(!s.includes(marker))throw Error('Card insertion point missing');
+s=s.replace(marker,`<article class="case-card soon-card" aria-label="Шестой кейс — скоро"><div class="card-meta"><span>CASE 06</span><span>В РАЗРАБОТКЕ</span></div><div class="case-art real-art soon-art"><svg viewBox="0 0 320 250" aria-hidden="true"><path d="M40 70 235 40 285 80 285 195 92 230 40 190Z" fill="#050505"/><path d="M40 70 92 108 285 80M92 108V230M40 100 92 137 285 110" fill="none" stroke="#24221f" stroke-width="5"/><path d="M140 100V150H170V94M58 137V175M252 122V164" fill="none" stroke="#191817" stroke-width="9"/></svg><strong>СКОРО</strong></div><h3>Что-то намечается</h3><p>Илюха готовит новый дроп</p><div class="card-bottom"><b>Скоро откроется</b><span aria-hidden="true">⌛</span></div></article>`+marker);
+fs.writeFileSync(p,s);p='dist/index.html';s=fs.readFileSync(p,'utf8').replace('<i>05</i>','<i>06</i>');fs.writeFileSync(p,s);

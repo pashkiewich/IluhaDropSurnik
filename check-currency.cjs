@@ -1,0 +1,6 @@
+const vm=require('node:vm'),fs=require('node:fs'),assert=require('node:assert/strict');
+const elements=new Map();function el(key){if(!elements.has(key))elements.set(key,{textContent:'',innerHTML:'',classList:{add(){},remove(){},toggle(){}},querySelectorAll(){return[];},showModal(){},close(){},addEventListener(){}});return elements.get(key);}
+let stored;const timers=[];const ctx=vm.createContext({console,crypto:require('node:crypto').webcrypto,sessionStorage:{getItem(){return null},setItem(){}},localStorage:{getItem(){return null},setItem(k,v){stored=v}},document:{querySelector:el,querySelectorAll(){return[]}},setTimeout(fn){timers.push(fn)}});
+vm.runInContext(fs.readFileSync('dist/logic.js','utf8')+fs.readFileSync('dist/case-reel.js','utf8')+fs.readFileSync('dist/app.js','utf8'),ctx);
+vm.runInContext("Game.pick=()=>({...Game.getItems(Game.cases[1])[2]});spin(Game.cases[1]);spin(Game.cases[1]);",ctx);
+const result=JSON.parse(stored);assert.equal(result.balance,1237);assert.equal(result.inventory.length,0);assert.equal(result.opened,1);timers[0]();assert(!el('#dialogContent').innerHTML.includes('id="sellReward"'));console.log('PASS: currency credited once, no inventory entry or resale button');

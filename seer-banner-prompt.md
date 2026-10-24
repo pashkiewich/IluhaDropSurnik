@@ -1,0 +1,1 @@
+Built-in Imagegen. Reference pose: closed eyes, dark scarf, prophetic pointing hand. Ilyukha clown identity, mushroom hat and cigar, mystical monochrome photo texture with gold text. Landscape 3:2, exact headline: вижу сочный дроп жми илюха дроп.

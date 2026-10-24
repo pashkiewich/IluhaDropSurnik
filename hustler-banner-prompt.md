@@ -1,0 +1,1 @@
+Built-in Imagegen. Landscape 3:2 humorous detailed banner. Mushroom-hatted Ilyukha clown in oversized tracksuit and crossbody bag, generic wrapped mystery parcel, neon urban night. Exact text: закладываем стафчик на илюха дроп. No other copy or contact details.

@@ -1,0 +1,6 @@
+const vm=require('node:vm'),fs=require('node:fs'),assert=require('node:assert/strict');
+for(const value of [0,2147483647,2147483648,4294967295]){let saved,timer;const nodes=new Map();const $=k=>{if(!nodes.has(k))nodes.set(k,{innerHTML:'',disabled:false,insertAdjacentHTML(){},close(){}});return nodes.get(k);};const ctx=vm.createContext({itemVisual:it=>it.icon,window:{},document:{},$,openCase(){},state:{balance:1000,inventory:[],opened:0},busy:false,save(){saved=JSON.parse(JSON.stringify(ctx.state));},render(){},setTimeout(fn){timer=fn},crypto:{getRandomValues(arr){arr[0]=value},randomUUID(){return 'one'}}});
+vm.runInContext(fs.readFileSync('dist/logic.js','utf8')+fs.readFileSync('dist/request-drop.js','utf8').replace('return {result};','return {result,request};'),ctx);vm.runInContext('RequestDrop.request(Game.cases[0]);RequestDrop.request(Game.cases[0]);',ctx);assert.equal(saved.balance,900);assert.equal(saved.opened,1);assert.equal(saved.inventory.length,value<2147483648?1:0);if(saved.inventory.length)assert.equal(saved.inventory[0].rarity,'legendary');timer();assert.equal(vm.runInContext('busy',ctx),false);assert.equal(vm.runInContext('Game.cases[0].weights.join()',ctx),'40,28,17,7,4,3,1');}
+console.log('PASS: 50/50 boundary, legendary reward, empty loss, single debit, restored controls, unchanged odds');
+
+

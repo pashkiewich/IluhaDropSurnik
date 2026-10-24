@@ -1,0 +1,1 @@
+Built-in Imagegen background extraction. Extract only upper-left closed КОТ МАКСИМ chest from cat.png; preserve design and text; true transparent alpha, centered complete chest with margins, no other sheet elements or floor.
